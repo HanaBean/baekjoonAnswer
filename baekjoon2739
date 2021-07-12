@@ -1,0 +1,17 @@
+문제
+N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하시오.
+
+using System;
+public class Program {
+ 
+    public static void Main()
+    {
+        int n = int.Parse(Console.ReadLine());
+        if (n>9 || n<1) return;
+        
+        for(int i=1;i<=9;i++){
+            Console.WriteLine("{0} * {1} = {2}",n,i,n*i);
+        }
+            }
+}
+
