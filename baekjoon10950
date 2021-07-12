@@ -1,0 +1,24 @@
+두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
+첫째 줄에는 케이스의 갯수 T가 주어진다.
+각 테스터 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와 B가 주어진다.(0<A , B<10)
+각 테스트 케이스마다 A+B를 출력한다
+
+using System;
+public class Program {
+ 
+    public static void Main()
+    {
+        int t = int.Parse(Console.ReadLine());
+        int[] a = new int[t];
+        int[] b = new int[t];
+        
+        for(int i=1;i<=t;i++){
+            a[i] = int.Parse(Console.ReadLine());
+            b[i] = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine("{0}",a[i]+b[i]);
+        }
+     }
+}
+
+런타임 에러
